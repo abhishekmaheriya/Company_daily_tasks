@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    android:layout_centerHorizontal="true"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:padding="5dip">
+
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_span="2"
+            android:gravity="center_horizontal"
+            android:text="Login Form"
+            android:textColor="@color/white"
+            android:background="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginLeft="10dp"
+            android:text="User Name :"
+            android:layout_marginTop="14dp"
+            android:textColor="@color/black"
+            android:textSize="26sp" />
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="10dp"
+            android:hint="UserName"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/white" />
+    </TableRow>
+
+    <TableRow android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="14dp"
+            android:text="Password   :"
+            android:textColor="@color/black"
+            android:textSize="26sp"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:hint="Password"
+            android:layout_margin="10dp"
+            android:textColor="@color/white" />
+    </TableRow>
+
+
+    <TableRow android:layout_marginTop="40dp">
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_span="2"
+            android:background="#0ff"
+            android:text="Login"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </TableRow>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="This is a TableLayout"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_marginTop="310dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+
+</TableLayout>

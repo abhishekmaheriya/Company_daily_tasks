@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "402101675953",
+    "project_id": "login-interiew",
+    "storage_bucket": "login-interiew.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402101675953:android:5c0fda14669e421d157f90",
+        "android_client_info": {
+          "package_name": "com.example.login_interiew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "402101675953-oqhi4ftc9mrbslmkce8hi9uj61gp238q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiyRW-Xf06rQEEYG8rSvnWOViiA-BtfIA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "402101675953-oqhi4ftc9mrbslmkce8hi9uj61gp238q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

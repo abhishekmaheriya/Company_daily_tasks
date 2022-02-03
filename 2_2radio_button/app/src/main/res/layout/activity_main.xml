@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="  Male"
+            android:checked="false"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="   Female"
+            android:checked="false"
+            android:textSize="20dp" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Selected"
+        android:id="@+id/button"
+        android:onClick="onclickbuttonMethod"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="400dp"
+        tools:ignore="OnClick" />
+
+</RelativeLayout>

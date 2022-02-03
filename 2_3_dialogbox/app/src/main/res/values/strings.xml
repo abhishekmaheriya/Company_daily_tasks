@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">2_3_dialog box</string>
+    <string name="dialog_message">Welcome to box</string>
+    <string name="dialog_title">alert dialog </string>
+</resources>

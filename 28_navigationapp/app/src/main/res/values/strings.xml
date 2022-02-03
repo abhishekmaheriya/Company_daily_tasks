@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">navigationapp</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="basket_fragment">Timeline Fragment</string>
+    <string name="promo_code">promocode fragment</string>
+    <string name="myactivity">My activity fragment</string>
+    <string name="reminder">Reminder fragment</string>
+    <string name="Home">Home Fragment</string>
+    <string name="setting">setting fragment</string>
+    <string name="support">support fragment</string>
+</resources>

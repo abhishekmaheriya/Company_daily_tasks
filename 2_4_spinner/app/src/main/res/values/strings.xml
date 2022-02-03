@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">2_4_spinner</string>
+
+    <string-array name="country">
+
+        <item>India</item>
+        <item>USA</item>
+        <item>Srilanka</item>
+        <item>UK</item>
+        <item>Maldives</item>
+        <item>China</item>
+
+    </string-array>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:title="Home"
+            android:icon="@drawable/ic_home"
+            android:id="@+id/home"></item>
+
+        <item android:title="My Activities"
+            android:icon="@drawable/ic_baseline_assignment_24"
+            android:id="@+id/myactivity"></item>
+
+        <item android:title="Settings"
+            android:icon="@drawable/setting"
+            android:id="@+id/setting"></item>
+
+        <item android:title="Reminder"
+            android:icon="@drawable/ic_baseline_watch_later_24"
+            android:id="@+id/reminder"></item>
+
+        <item android:title="Rates App"
+            android:icon="@drawable/ic_baseline_star_rate_24"
+            android:id="@+id/rateapps"></item>
+
+        <item android:title="Share App"
+            android:icon="@drawable/ic_baseline_share_24"
+            android:id="@+id/share"></item>
+
+        <item android:title="Log Out"
+            android:icon="@drawable/ic_baseline_person_remove_24"
+            android:id="@+id/logout"></item>
+
+    </group>
+
+    <item android:title=" ">
+
+    </item>
+
+</menu>

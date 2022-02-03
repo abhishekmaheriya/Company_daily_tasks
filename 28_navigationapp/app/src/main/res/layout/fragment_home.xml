@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment"
+    android:backgroundTint="@color/purple_700"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:rowCount="5"
+                android:rowOrderPreserved="true"
+                android:columnOrderPreserved="false">
+
+            <!-- TODO: Update blank fragment layout -->
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="6dp"
+                android:id="@+id/imageslidercard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.smarteist.autoimageslider.SliderView
+                    android:id="@+id/imageSlider"
+                    android:layout_width="395dp"
+                    android:layout_height="200dp"
+                    app:sliderAnimationDuration="600"
+                    app:sliderAutoCycleDirection="back_and_forth"
+                    app:sliderAutoCycleEnabled="true"
+                    app:sliderIndicatorAnimationDuration="600"
+                    app:sliderIndicatorGravity="center_horizontal|bottom"
+                    app:sliderIndicatorMargin="15dp"
+                    app:sliderIndicatorOrientation="horizontal"
+                    app:sliderIndicatorPadding="3dp"
+                    app:sliderIndicatorRadius="2dp"
+                    app:sliderIndicatorSelectedColor="#5A5A5A"
+                    app:sliderIndicatorUnselectedColor="#FFF"
+                    app:sliderScrollTimeInSec="1"
+                    app:sliderStartAutoCycle="true" />
+
+            </androidx.cardview.widget.CardView> // imageslider
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:rowCount="4"
+                android:layout_marginTop="200dp"
+                android:alignmentMode="alignMargins"
+                android:columnOrderPreserved="false"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:id="@+id/membercard"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/imageslidercard">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/card_image_market_logo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/member_image_logo" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/card_image_market_logo"
+                            android:gravity="center"
+                            android:text="Members"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                        z
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>  // members
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:id="@+id/visitorscard"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/membercard"
+                    android:layout_below="@id/imageslidercard">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/card_image_visitor_logo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/visitor" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/card_image_visitor_logo"
+                            android:gravity="center"
+                            android:text="Visitors"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>   // visitors
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:id="@+id/parkingcard"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/visitorscard"
+                    android:layout_below="@id/imageslidercard">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/card_image_parking_logo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/parking_logo_image" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/card_image_parking_logo"
+                            android:gravity="center"
+                            android:text="Parking"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>  // parking
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:id="@+id/complaincard"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/membercard">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/card_image_complain_logo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/complain_logo" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/card_image_complain_logo"
+                            android:gravity="center"
+                            android:text="Complaints"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>  // complaints
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:id="@+id/facilitiescard"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/complaincard"
+                    android:layout_below="@id/visitorscard">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/card_image_facilities_logo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/facility_logo" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/card_image_facilities_logo"
+                            android:gravity="center"
+                            android:text="Facilities"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView> // facilites
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:id="@+id/emergencycard"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/facilitiescard"
+                    android:layout_below="@id/visitorscard">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/card_image_emergency_logo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/emergancy_logo" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/card_image_emergency_logo"
+                            android:gravity="center"
+                            android:text="Emergency Number"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>  // emergency number
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:id="@+id/Serviceprovidercard"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/complaincard">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/card_image_serviceprovider_logo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/serviceprovider_logo" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/card_image_serviceprovider_logo"
+                            android:gravity="center"
+                            android:text=" Service Provider"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>  // service provider
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:id="@+id/soscard"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/Serviceprovidercard"
+                    android:layout_below="@id/facilitiescard">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/card_image_sos_logo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/sos_logo" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/card_image_sos_logo"
+                            android:gravity="center"
+                            android:text="SOS"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView> // sos
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:id="@+id/marketplacecard"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/soscard"
+                    android:layout_below="@id/emergencycard">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/card_image_marketplace_logo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/market_logo" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/card_image_marketplace_logo"
+                            android:gravity="center"
+                            android:text="Market Place"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView> // Market place
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:id="@+id/gallerycard"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/marketplacecard">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/card_image_gallery_logo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/gallery_logo" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/card_image_gallery_logo"
+                            android:gravity="center"
+                            android:text="Gallery"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView> // gallery
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:id="@+id/myprofilecard"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/gallerycard"
+                    android:layout_below="@id/marketplacecard">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/card_image_myprofile_logo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/myprofile_logo" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/card_image_myprofile_logo"
+                            android:gravity="center"
+                            android:text="My Profile"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView> // My Profile
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:id="@+id/contactteamcard"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/myprofilecard"
+                    android:layout_below="@id/marketplacecard">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/card_image_contactteam_logo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/contactteam_logo" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/card_image_contactteam_logo"
+                            android:gravity="center"
+                            android:text="Contact Team"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView> // Contact Team
+
+
+            </GridLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

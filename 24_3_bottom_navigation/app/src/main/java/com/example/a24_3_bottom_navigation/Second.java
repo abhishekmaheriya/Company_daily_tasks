@@ -1,0 +1,26 @@
+package com.example.a24_3_bottom_navigation;
+
+import android.os.Bundle;
+
+import androidx.fragment.app.Fragment;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+
+public class Second extends Fragment {
+
+    public Second(){
+        // require a empty public constructor
+    }
+
+
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_second, container, false);
+    }
+}

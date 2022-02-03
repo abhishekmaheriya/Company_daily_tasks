@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">profile</string>
+
+
+        <string-array name="country">
+
+            <item>United States</item>
+            <item>USA</item>
+            <item>Srilanka</item>
+            <item>UK</item>
+            <item>Maldives</item>
+            <item>China</item>
+
+        </string-array>
+</resources>
